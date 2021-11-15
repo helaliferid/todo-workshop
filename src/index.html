@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Event Workshop</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div style="display: flex;flex-direction: row;align-content: space-between;">
+      <div class="form-group">
+        <input type="text" name="todoLabel" id="todoInput" class="form-control" placeholder="type your todo here">
+      </div>
+      <hr>
+      <button class="btn btn-primary" id="addTodo">Add TODO</button>
+    </div>
+  </div>
+  <table class="table table-striped">
+    <thead class="txt txt-primary">
+      <td>#</td>
+      <td>Task to do</td>
+      <td>Update</td>
+      <td>Delete</td>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+      You have {nb} Todos
+    </tfoot>
+  </table>
+
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>

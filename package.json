@@ -1,0 +1,16 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "description": "DOM Mainpulation",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "start:function": "parcel src/function_as_first_class.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
