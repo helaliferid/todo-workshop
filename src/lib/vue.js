@@ -1,3 +1,5 @@
-class todoView{
-    
+class TodoView{
+    constructor(){
+        
+    }
 }

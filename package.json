@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "start:function": "parcel src/function_as_first_class.html",
+    "oo":"nodemon src/oriented_object_sample.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
