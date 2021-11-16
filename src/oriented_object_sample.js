@@ -34,7 +34,7 @@ class Car{
 }
 
 class Engine{
-    speed=0;
+    #speed=0;
     constructor(speed){
         this.speed=speed;
     }
@@ -47,6 +47,7 @@ class Engine{
       
     };
 
+    //TODO: interdire deccelarate de dimnuee la vitess < 0; 
     deccelerate(dv){
         this.speed-=dv;
         console.log(`the engine is deccelerating now ... @ ${this.speed}`)  
@@ -59,7 +60,7 @@ class Wheel {
 
 class Application{
     run(){
-        console.log('main program')
+        console.log('Car System is Starting ...')
     }
 }
 
