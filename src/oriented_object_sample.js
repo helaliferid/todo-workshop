@@ -22,13 +22,13 @@ class Car{
 
     accelerate(dv){
        console.log('Accelerate the speed of the car');
-       this.engine.accelerate(10);
+       this.engine.accelerate(dv);
        console.log(this.engine.speed);
     };
 
     deccelerate(dv){
         console.log('Deccelerate the speed of the car');
-       this.engine.deccelerate(10);
+       this.engine.deccelerate(dv);
        console.log(this.engine.speed);
     }
 }
@@ -50,7 +50,7 @@ class Engine{
     //TODO: interdire deccelarate de dimnuee la vitess < 0; 
     deccelerate(dv){
         this.speed-=dv;
-        console.log(`the engine is deccelerating now ... @ ${this.speed}`)  
+        console.log(`the engine is deccelerating now ... @ ${this.speed}`) 
     }
 }
 
@@ -59,8 +59,21 @@ class Wheel {
 }
 
 class Application{
+    mercedes=null;
+    audi=null;
     run(){
-        console.log('Car System is Starting ...')
+        console.log('Car System is Starting ...');
+        const mercedesEngine=new Engine(0);
+        this.mercedes=new Car('Mercedes','aa-101-ab',mercedesEngine);
+        this.mercedes.start();
+        this.mercedes.accelerate(50);
+        this.mercedes.accelerate(50);
+        this.mercedes.accelerate(50);
+        this.mercedes.deccelerate(80);
+        this.mercedes.accelerate(50);
+        
+
+
     }
 }
 
